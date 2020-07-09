@@ -1,0 +1,50 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+class Item
+{
+    private:
+    String name;
+    double price;
+    int quantity;
+    Item(){
+        
+    }
+    
+    Item(String name, Double price, int quantity )
+    {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+    
+    public:
+        void setName(String name)
+        {
+            this.name = name;
+        }
+        void setPrice(double price)
+        {
+            this.price = price;
+        }void setQuantity(int quantity)
+        {
+            this.quantity = quantity;
+        }
+        
+        String getName(){
+            return name;   
+        }
+        double getPrice(){
+            return price;
+        }
+        int getQuantity(){
+            return quantity;
+        }
+        
+        bool equalTo(String name, String name1, double price, double price1){
+            if(name.compare(name1)) && price == price1)
+                return true
+            else
+                return false
+        }
+}
